@@ -15,6 +15,7 @@ Plug 'fatih/vim-go'      "golang support
 Plug 'airblade/vim-gitgutter' "git diff in sign column
 Plug 'myusuf3/numbers.vim' "relative and absolute line numbers
 Plug 'Xuyuanp/nerdtree-git-plugin' "git highlights for nerdtree
+Plug 'dart-lang/dart-vim-plugin' "dart syntax highlight
 Plug 'ryanoasis/vim-devicons' "Font support for nerdtree
 
 "vim-airline theme

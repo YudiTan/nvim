@@ -15,5 +15,6 @@
 				"--stdio"
 			]
 		}
-	}
+	},
+	"flutter.lsp.initialization.closingLabels": true
 }
