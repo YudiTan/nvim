@@ -1,13 +1,19 @@
 {
 	"coc.preferences.formatOnSaveFiletypes": [
-  		"dart"
+		"dart",
+		"css",
+		"markdown",
+		"json"
 	],
 	"languageserver": {
-	  "dockerfile": {
-    "command": "docker-langserver",
-    "filetypes": ["dockerfile"],
-    "args": ["--stdio"]
-  }
+		"dockerfile": {
+			"command": "docker-langserver",
+			"filetypes": [
+				"dockerfile"
+			],
+			"args": [
+				"--stdio"
+			]
+		}
+	}
 }
-}
-
