@@ -55,7 +55,7 @@ nmap <leader>gr <Plug>(coc-references)
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
 nnoremap <leader>fe :CocCommand flutter.emulators<CR>
-nnoremap <leader> fr :CocCommand flutter.run<CR>
+nnoremap <leader>fr :CocCommand flutter.run<CR>
 imap <expr> <C-e>   vsnip#available(1)  ? '<Plug>(vsnip-expand)'         : '<C-j>'
 
 "To remove VIM ex-mode so we dont accidentally enter it.
