@@ -46,6 +46,8 @@ nmap <leader>gr <Plug>(coc-references)
 "coc-flutter
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
+nnoremap <leader>fe :CocCommand flutter.emulators<CR>
+nnoremap <leader> fr :CocCommand flutter.run<CR>
 "To remove VIM ex-mode so we dont accidentally enter it.
 map q: <Nop>
 nnoremap Q <nop>
