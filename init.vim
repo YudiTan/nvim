@@ -22,6 +22,9 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim' "fuzzy file finder
 Plug 'gruvbox-community/gruvbox' "theme
+Plug 'hrsh7th/vim-vsnip' "for snippets
+Plug 'hrsh7th/vim-vsnip-integ'
+Plug 'Neevash/awesome-flutter-snippets' "flutter snippets
 Plug 'ryanoasis/vim-devicons' "Font support for nerdtree
 
 call plug#end()
@@ -29,25 +32,32 @@ call plug#end()
 
 "Remaps
 let mapleader = " "
+
 "NerdTree remap
 nmap <F1> :NERDTreeToggle<CR>
+
 "Numbers.vim
 nnoremap <F2> :NumbersToggle<CR>
+
 "To get rid of bad vim habits
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
 " GoTo code navigation
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gy <Plug>(coc-type-definition)
 nmap <leader>gi <Plug>(coc-implementation)
 nmap <leader>gr <Plug>(coc-references)
+
 "coc-flutter
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
 nnoremap <leader>fe :CocCommand flutter.emulators<CR>
 nnoremap <leader> fr :CocCommand flutter.run<CR>
+imap <expr> <C-e>   vsnip#available(1)  ? '<Plug>(vsnip-expand)'         : '<C-j>'
+
 "To remove VIM ex-mode so we dont accidentally enter it.
 map q: <Nop>
 nnoremap Q <nop>
