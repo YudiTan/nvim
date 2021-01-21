@@ -61,6 +61,7 @@ imap <expr> <C-e>   vsnip#available(1)  ? '<Plug>(vsnip-expand)'         : '<C-j
 "To remove VIM ex-mode so we dont accidentally enter it.
 map q: <Nop>
 nnoremap Q <nop>
+
 " use <tab> for trigger completion and navigate to the next complete item
 function! s:check_back_space() abort
   let col = col('.') - 1
@@ -71,6 +72,10 @@ inoremap <silent><expr> <Tab>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<Tab>" :
       \ coc#refresh()
+
+" use enter to confirm completion (auto imports)
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
 "Custom functions to trim white space
 fun! TrimWhiteSpace()
 	let l:save = winsaveview()
