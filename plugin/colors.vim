@@ -15,7 +15,7 @@ fun! ColorMyPencils()
 
     "To override the color of colorcolumn used by the theme.
     highlight ColorColumn ctermfg=226 guibg=#ffff00
-    highlight Normal guibg=none
+    "highlight Normal guibg=none
     highlight LineNr guifg=#5eacd3
     highlight netrwDir guifg=#5eacd3
     highlight qfFileName guifg=#aed75f

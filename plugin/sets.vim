@@ -16,6 +16,8 @@ set noshowmode
 set signcolumn=yes
 set isfname+=@-@
 set encoding=UTF-8
+set nobackup
+set nowritebackup
 
 " Give more space for displaying messages.
 set cmdheight=2
