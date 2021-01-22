@@ -25,6 +25,7 @@ Plug 'gruvbox-community/gruvbox' "theme
 Plug 'hrsh7th/vim-vsnip' "for snippets
 Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'Neevash/awesome-flutter-snippets' "flutter snippets
+Plug 'APZelos/blamer.nvim' "git blame
 Plug 'ryanoasis/vim-devicons' "Font support for nerdtree
 
 call plug#end()
