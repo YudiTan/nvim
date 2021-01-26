@@ -26,6 +26,7 @@ Plug 'hrsh7th/vim-vsnip' "for snippets
 Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'Neevash/awesome-flutter-snippets' "flutter snippets
 Plug 'APZelos/blamer.nvim' "git blame
+Plug 'wakatime/vim-wakatime' "wakatime
 Plug 'ryanoasis/vim-devicons' "Font support for nerdtree
 
 call plug#end()
