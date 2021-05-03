@@ -28,6 +28,7 @@ Plug 'Neevash/awesome-flutter-snippets' "flutter snippets
 Plug 'APZelos/blamer.nvim' "git blame
 Plug 'wakatime/vim-wakatime' "wakatime
 Plug 'ryanoasis/vim-devicons' "Font support for nerdtree
+Plug 'bfrg/vim-cpp-modern' "C++ support
 
 call plug#end()
 
